@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 for alphabet in range(97,122):
-    #print(alphabet)
     alpha = chr (alphabet)
-    print(alpha, end="")
+    print(f"{alpha}", end="")
