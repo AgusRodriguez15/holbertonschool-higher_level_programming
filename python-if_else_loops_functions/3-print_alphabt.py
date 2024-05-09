@@ -4,4 +4,3 @@ for alphabet in range(97, 123):
     if alphabet != 101:
         if alphabet != 113:
             print("{}".format(alpha), end="")
-            
