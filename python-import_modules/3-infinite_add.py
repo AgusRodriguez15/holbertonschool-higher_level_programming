@@ -6,4 +6,4 @@ if arg > 0:
     for i in argv[1:]:
         cant += int(i)
     if __name__ == "__main__":
-        print("{}".format(total))
+        print("{}".format(cant))
