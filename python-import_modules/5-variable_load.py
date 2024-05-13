@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-from add_0 import add
+from variable_load_5 import add
 if __name__ == "__main__":
     print(a)
