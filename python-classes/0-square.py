@@ -2,5 +2,5 @@
 "squareeeee"
 
 
-class Square: 
-    pass
+class Square: #class
+    pass #pass
