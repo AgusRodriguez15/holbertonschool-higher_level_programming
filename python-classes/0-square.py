@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-
-class Square:  # Define 
-    pass  # Sentencia 
+"squareeeee"
+class Square:  
+    pass  
