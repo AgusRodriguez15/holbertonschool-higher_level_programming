@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-class Square: #aaaa
-    """
+
+"""
     Clase que define un cuadrado.
 
     Atributos privados de instancia:
@@ -8,7 +8,9 @@ class Square: #aaaa
 
     Métodos:
         __init__(self, size): Constructor.
-    """
+"""
+    
+class Square: #aaaa
 
     def __init__(self, size): #aaa
         """
