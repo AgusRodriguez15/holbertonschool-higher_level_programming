@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-class Square:
+class Square: #aaaa
     """
     Clase que define un cuadrado.
 
@@ -10,11 +10,11 @@ class Square:
         __init__(self, size): Constructor.
     """
 
-    def __init__(self, size):
+    def __init__(self, size): #aaa
         """
         Constructor de la clase Square.
 
         Parámetros:
             size (int): Tamaño del cuadrado.
         """
-        self.__size = size
+        self.__size = size # aaa
