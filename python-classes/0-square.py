@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-"squareeeee"
+
+"""
+squareeeee
+"""
 
 
-class Square: #class
-    pass #pass
+class Square:  # Clase Square
+    """
+    Docstring de la clase Square
+    """
+    pass  # Pass
