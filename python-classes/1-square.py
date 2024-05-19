@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 """
+squareeeee
+"""
+
+class Square:
+    """
     Clase que define un cuadrado.
 
     Atributos privados de instancia:
@@ -8,15 +13,14 @@
 
     Métodos:
         __init__(self, size): Constructor.
-"""
-    
-class Square: #aaaa
+    """
 
-    def __init__(self, size): #aaa
+    def __init__(self, size):
         """
         Constructor de la clase Square.
 
         Parámetros:
             size (int): Tamaño del cuadrado.
         """
-        self.__size = size # aaa
+        self.__size = size
+
