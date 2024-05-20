@@ -18,8 +18,10 @@ def add_integer(a, b=98):
         TypeError: Si alguno de los argumentos no es un entero o un flotante.
     """
     # Comprobar si a y b son enteros o flotantes
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        raise TypeError("a must be an integer or b must be an integer")
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be an integer")
 
     # Convertir a y b a enteros y sumarlos
     return int(a) + int(b)
