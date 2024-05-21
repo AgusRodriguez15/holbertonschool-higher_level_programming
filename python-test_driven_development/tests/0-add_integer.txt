@@ -3,3 +3,26 @@
 3
 >>> add_integer(1.1000, 3)
 4
+>>> add_integer(29834e578320)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+>>> add_integer('a', 40)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(154, 'b')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(20)
+118
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+    
