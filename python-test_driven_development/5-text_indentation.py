@@ -2,6 +2,7 @@
 
 """5 TEXT INDETATIONN"""
 
+
 def text_indentation(text):
     """
     Insert two new lines after each of the specified characters in the text.
