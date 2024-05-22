@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-""""5 TEXT INDETATIONN"""
-
+"""5 TEXT INDETATIONN"""
 
 def text_indentation(text):
     """
@@ -19,9 +18,9 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    punctuation = ['.', '?', ':']
+    busca = ['.', '?', ':']
     for char in text:
-        if char not in punctuation:
+        if char not in busca:
             print(char, end='')
         else:
             print(char)
