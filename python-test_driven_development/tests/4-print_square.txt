@@ -13,5 +13,5 @@ ValueError: size must be >= 0
 >>> print_square()
 Traceback (most recent call last):
  ...
-ValueError: missing one argument
+TypeError: print_square() missing 1 required positional argument: 'size'
 
