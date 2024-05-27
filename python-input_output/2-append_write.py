@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+"""add a string to the final"""
+
+
+def append_write(filename="", text=""):
+    with open(filename, 'w', encoding="UTF-8") as f:
+        f.write(text)
+        return f.write(text)
