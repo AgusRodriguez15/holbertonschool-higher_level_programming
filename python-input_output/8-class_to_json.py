@@ -3,12 +3,5 @@
 import json
 def class_to_json(obj):
     dictionary = {}
-
-    # Pasar todos los atributos del objeto a un diccionario
-    # "inspeccionar" obj y poner todo lo que tiene adentro de dictionary
-    #print(vars(obj))
     dictionary = obj.__dict__
-    
-
-
     return dictionary   
