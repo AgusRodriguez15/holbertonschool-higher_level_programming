@@ -13,5 +13,6 @@ with open(filename, 'a+', encoding="utf-8") as new_file:
     lista = []
     for i in argvv[1:]:
         lista.append(i[0:])
-    save_to_json_file(lista, filename)
+    new_list = lista.copy()
+    save_to_json_file(new_list, filename)
     load_from_json_file(filename)
