@@ -11,7 +11,7 @@ filename = "add_item.json"
 
 with open(filename, 'a+', encoding="utf-8") as new_file:
     lista = []
-    lista.append(argvv[1:])
-    save_to_json_file(lista, filename) and load_from_json_file(filename)
-    
-
+    for i in argvv[1:]:
+        lista.append(i[0:])
+    save_to_json_file(lista, filename)
+    load_from_json_file(filename)
