@@ -15,4 +15,4 @@ with open(filename, 'a+', encoding="utf-8") as new_file:
         lista.append(i[0:])
     new_list = lista.copy()
     save_to_json_file(new_list, filename)
-    load_from_json_file(filename)
+    new_list = load_from_json_file(filename)
