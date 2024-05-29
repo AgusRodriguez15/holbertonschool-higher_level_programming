@@ -6,13 +6,13 @@ import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-argvv = sys.argv
 filename = "add_item.json"
 
-with open(filename, 'a+', encoding="utf-8") as new_file:
+try:
+    lista = load_from_json_file(filename)
+except FileNotFoundError:
     lista = []
-    for i in argvv[1:]:
-        lista.append(i[0:])
-    new_list = lista.copy()
-    save_to_json_file(new_list, filename)
-    new_list = load_from_json_file(filename)
+
+for i in sys.argv[1:]:
+    lista.append(i[0:])
+save_to_json_file(lista, filename)
