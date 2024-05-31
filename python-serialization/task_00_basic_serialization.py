@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-import json
-"""basic serialization module that adds the functionality to serialize and deserialize the JSON file """
+
+from json import dump, load
 
 
-def serialize_and_save_to_file(filename, data):
+"""basic serialization module that adds"""
+
+
+def serialize_and_save_to_file(data, filename):
     """serialize"""
-    json.dump(filename, data)
-    
+    with open(filename, 'w', encoding="UTF-8") as fileNew:
+        dump(data, fileNew)
+
+
 def load_and_deserialize(filename):
     """Load and deserialize"""
-    json.load(filename)
+    with open(filename, 'r', encoding="utf-8") as filenew:
+        return load(filenew)
