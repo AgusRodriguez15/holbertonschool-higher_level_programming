@@ -26,3 +26,4 @@ def fetch_and_save_posts():
         add.writeheader()
         for post in posts:
             add.writerow(post)
+        return True
