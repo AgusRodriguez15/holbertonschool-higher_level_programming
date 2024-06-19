@@ -4,4 +4,4 @@ CREATE TABLE IF NOT EXISTS first_table (
     name VARCHAR(256)
 );
 
-DESCRIBE first_table;
+DESC first_table;
