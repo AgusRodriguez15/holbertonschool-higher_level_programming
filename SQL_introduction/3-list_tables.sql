@@ -1,2 +1,2 @@
 -- show all the tables
-SHOW TABLES FROM mysql;
+SHOW TABLES FROM hbtn_test_db_0;
