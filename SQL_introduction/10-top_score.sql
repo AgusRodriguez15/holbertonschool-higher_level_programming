@@ -1,2 +1,3 @@
 -- list all the records
-SELECT * FROM second_table
+SELECT score FROM second_table
+SELECT name FROM second_table
