@@ -1,2 +1,2 @@
 -- list all the records
-SELECT score FROM second_table ORDER BY score ASC;
+SELECT score FROM second_table ORDER BY score DESC;
