@@ -20,7 +20,7 @@ def listAllStates(mysql_username, mysql_password, database_name):
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY states.id")
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     rows = cur.fetchall()
 
