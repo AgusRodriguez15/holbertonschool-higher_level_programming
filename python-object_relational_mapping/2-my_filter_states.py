@@ -15,6 +15,7 @@ import sys
 
 def listAllStates(mysql_username, mysql_password, database_name,
                   state_name_searched):
+    """list all"""
 
     db = MySQLdb.connect(host="localhost",
                          port=3306,
