@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import MySQLdb
+import sys
 
 # the first step is connect to a MySQL database using the function 'module_name.connect'
 #db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASS, db=MY_DB)
@@ -25,5 +26,11 @@ def listAllStates(mysql_username, mysql_password, database_name):
     # Close all databases
     db.close()
     
-    
+    if __name__ == "__main__":
+        "sqlAlchemy"
 
+    mysql_username = sys.argv[1]
+    mysql_password = sys.argv[2]
+    database_name = sys.argv[3]
+    
+    listAllStates(mysql_username, mysql_password, database_name)
