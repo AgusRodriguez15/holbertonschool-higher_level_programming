@@ -20,7 +20,7 @@ def listAllStates(mysql_username, mysql_password, database_name):
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY states.id")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     rows = cur.fetchall()
 
@@ -31,6 +31,7 @@ def listAllStates(mysql_username, mysql_password, database_name):
     cur.close()
     # Close all databases
     db.close()
+
 
 if __name__ == "__main__":
     "sqlAlchemy"
