@@ -35,6 +35,7 @@ def listAllStates(mysql_username, mysql_password, database_name):
     # Close all databases
     db.close()
 
+
 if __name__ == "__main__":
     "sqlAlchemy"
 
