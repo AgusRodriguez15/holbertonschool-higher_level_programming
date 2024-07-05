@@ -1,0 +1,8 @@
+>>> geo = BaseGeometry()
+>>> geo.area()
+Exception: area() is not implemented
+
+>>> geo = BaseGeometry()
+>>> geo.integer_validator("width", 5)
+>>> geo.integer_validator("height", -1)
+ValueError: height must be greater than 0
