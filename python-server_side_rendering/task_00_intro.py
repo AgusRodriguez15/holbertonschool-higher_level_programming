@@ -2,13 +2,17 @@ import os
 
 def generate_invitations(template, attendees):
     if isinstance(template, str): 
-        raise TypeError("template must be a string")
+        print("error: template must be a string")
+        return
     
     if isinstance(attendees, list):
-        raise TypeError("attendees must be a list")
+        print("error: attendees must be a list")
+        return
     
-    if template == "":
-        raise ValueError("template is empty")
+    if not template:
+        print("error: template is empty")
+        return
     
-    if attendees == "":
-        raise ValueError("attendees is empty")
+    if not attendees:
+        print("error: attendees is empty")
+        return
