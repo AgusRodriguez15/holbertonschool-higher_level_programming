@@ -2,11 +2,11 @@
 
 def generate_invitations (template, attendees):
     
-    if isinstance(template, str): 
+    if not isinstance(template, str): 
         print("error: template must be a string")
         return
     
-    if isinstance(attendees, list):
+    if not isinstance(attendees, list):
         print("error: attendees must be a list")
         return
     
@@ -20,7 +20,7 @@ def generate_invitations (template, attendees):
     
     with open('output_1.txt', 'w') as output_file:
         for attendee in attendees:
-            replace = text.format(
+            replace = template.format(
                 name=attendee.get("name", "N/A"),
                 event_title=attendee.get("event_title", "N/A"),
                 event_date=attendee.get("event_date", "N/A") if attendee["event_date"] else "N/A",
@@ -28,6 +28,3 @@ def generate_invitations (template, attendees):
             )
             output_file.write(replace + "\n")
     print(replace)
-    
-    with open('template.txt', 'r') as file:
-        text = file.read()
