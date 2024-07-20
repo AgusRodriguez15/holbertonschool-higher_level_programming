@@ -23,7 +23,7 @@ def generate_invitations (template, attendees):
             replace = template.format(
                 name=attendee.get("name", "N/A"),
                 event_title=attendee.get("event_title", "N/A"),
-                event_date=attendee.get("event_date", "N/A") if attendee["event_date"] else "N/A",
+                event_date=attendee.get("event_date", "N/A"),
                 event_location=attendee.get("event_location", "N/A")
             )
             output_file.write(replace + "\n")
