@@ -18,7 +18,7 @@ def generate_invitations (template, attendees):
         print("error: attendees is empty")
         return
     
-    with open('output_1.txt', 'w') as output_file:
+    with open('output_2.txt', 'w') as output_file:
         for attendee in attendees:
             replace = template.format(
                 name=attendee.get("name", "N/A"),
