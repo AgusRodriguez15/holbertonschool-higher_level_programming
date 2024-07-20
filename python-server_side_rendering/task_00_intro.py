@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import os
 
 def generate_invitations (template, attendees):
     
@@ -29,5 +28,3 @@ def generate_invitations (template, attendees):
             )
             output_file.write(replace + "\n")
     print(replace)
-
-    assert os.path.exists('output_2.txt'), "Failed: Output file 2 should be generated"
