@@ -9,7 +9,7 @@ attendees = [
 
 #template = "Hello {name}, You are invited to the {event_title} on {event_date} at {event_location}. We look forward to your presence. Best regards, Event Team"
 with open('template.txt','r') as file:
-    text = " ".join(line.rstrip() for line in file)
+    text = file.read()
 
  
 for attendee in attendees:

@@ -19,7 +19,7 @@ def generate_invitations (template, attendees):
         return
     
     with open('template.txt','r') as file:
-        text = " ".join(line.rstrip() for line in file)
+        text = file.read()
 
     with open('output_1.txt', 'w') as output_file:
         for attendee in attendees:
