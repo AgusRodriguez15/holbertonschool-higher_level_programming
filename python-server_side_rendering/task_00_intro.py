@@ -1,5 +1,7 @@
+#!/usr/bin/python3
 
-def generate_invitations(template, attendees):
+def generate_invitations (template, attendees):
+    
     if isinstance(template, str): 
         print("error: template must be a string")
         return
