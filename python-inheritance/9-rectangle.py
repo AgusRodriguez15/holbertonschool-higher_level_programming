@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python3}
+
 """create an empty class"""
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
@@ -9,7 +10,7 @@ class Rectangle(BaseGeometry):
     def area(self):
         """use exception"""
         return self._width * self._height
-    
+
     def integer_validator(self, name, value):
         """validate"""
         if not isinstance(value, int):
@@ -23,7 +24,6 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self._width = width
         self._height = height
-        
+
     def __str__(self):
         return f"[Rectangle] {self._width}/{self._height}"
-        
