@@ -17,4 +17,4 @@ class Square(BaseGeometry):
         self._size = size
 
     def __str__(self):
-        return f"[Rectangle] {self._size}/{self._size}"
+        return f"[Square] {self._size}/{self._size}"
