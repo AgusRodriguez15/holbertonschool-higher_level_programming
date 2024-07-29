@@ -2,7 +2,7 @@
 
 """create an empty class"""
 
-BaseGeometry = __import__('9-rectangle').BaseGeometry
+BaseGeometry = __import__('9-rectangle').Rectangle
 
 
 class Square(BaseGeometry):
