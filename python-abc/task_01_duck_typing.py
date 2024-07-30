@@ -32,10 +32,10 @@ class Rectangle(Shape):
         
     
     def area(self):
-        return self.width + self.height + self.width + self.height
+        return self.width * self.height
     
     def perimeter(self):
-        return self.width * self.height
+        return self.width + self.height + self.width + self.height
     
 def shape_info(shape):
     print("Area:", shape.area())
